@@ -5,7 +5,7 @@ simpliwp/rpm-repos
 
 ####About
 
-This GitHub project provides an RPM repository of custom installation packages created for my production use.
+This GitHub project provides an RPM repository of custom installation packages created for production use.
 
 
 ####Available Repos
