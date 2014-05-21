@@ -7,8 +7,17 @@ An RHEL Repository providing the Nginx Web Server with Naxsi Web Application Fir
 ####About
 
 
-Create the following file:
+This project provides a repository and a rpm for an installation of Nginx with Naxsi.
 
+
+* Nginx - is a free, open-source, high-performance HTTP server and reverse proxy [http://wiki.nginx.org/Main]()
+* Naxsi  -  NAXSI is an open-source, high performance, low rules maintenance WAF (Web Application Firewall) for NGINX 
+[https://github.com/nbs-system/naxsi/]()
+* Naxsi Basic Setup [https://github.com/nbs-system/naxsi/wiki/basicsetup]()
+* 
+
+
+###How to Install nginx-naxsi
 
 ####Nginx already installed
 
@@ -17,11 +26,11 @@ If you already have Nginx installed, you will want to backup your /etc/nginx dir
 		mkdir ~/nginx-backups
 		tar -czvf ~/nginx-backups/etc-nginx.tar.gz /etc/nginx
 
-Now uninstall
+Now uninstall your old installation of nginx
 
 		sudo yum remove nginx
 
-Now go to the next step
+Now follow the 'How to Install nginx-naxsi rpm' to complete your installation. 
 
 
 ####How to Install nginx-naxsi rpm
@@ -80,8 +89,9 @@ now you can install it from the repo
 
 ####Configuration
 
+Setup your Nginx configuration and make sure its working properly before proceeding. If you had a previous configuration files that you backed up in the previous step, restore them.
 
-Edit your nginx.conf file to include the naxsi core rules:
+Once Nginx is working properly without naxsi being enabled, edit your nginx.conf file to include the naxsi core rules:
 
 	sudo nano /etc/nginx/nginx.conf
 
@@ -156,7 +166,7 @@ While in Learning Mode, the ruleset will log any violations of its rules. With L
 ####WordPress Support
 
 
-Naxsi provides rulesets for WordPress,DokuWiki and other configurations. See the GitHub project [naxsi-rules] (https://github.com/nbs-system/naxsi-rules )for more information. Simply download or copy and paste their rulesets and use in place of the naxsi-mysite.rules file provided with this package.
+Naxsi provides rulesets for WordPress,DokuWiki and other configurations. See the GitHub project [naxsi-rules](https://github.com/nbs-system/naxsi-rules )for more information. Simply download or copy and paste their rulesets and use in place of the naxsi-mysite.rules file provided with this package.
 
 
 ####More Information
