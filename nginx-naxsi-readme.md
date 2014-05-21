@@ -31,7 +31,11 @@ Now uninstall your old installation of nginx
 
 		sudo yum remove nginx
 
-Now follow the 'How to Install nginx-naxsi rpm' to complete your installation. 
+You can now either install directly from GitHub 
+
+
+or add it as a [repo](https://github.com/simpliwp/rpm-repos/blob/master/README.md#how-to-install-a-repo). see [the rpm-repos readme](https://github.com/simpliwp/rpm-repos/blob/master/README.md) for more installation  options.
+
 
 
 
