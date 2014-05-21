@@ -74,7 +74,7 @@ Create a repository file
 and add the following lines and save it:
 
 		[simpliwp-nginx-naxsi]
-		name=Optional Local Packages - $basearch
+		name=SimpliWP nginx-naxsi repo - $basearch
 		baseurl=https://github.com/simpliwp/nginx-naxsi/raw/master/x86_64/rpms/
 		enabled=1
 		gpgcheck=0
