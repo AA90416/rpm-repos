@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nginx-naxsi
 ===========
 
@@ -172,3 +173,9 @@ Naxsi provides rulesets for WordPress,DokuWiki and other configurations. See the
 ####More Information
 
 For more, please see the naxsi's [basic setup](https://github.com/nbs-system/naxsi/wiki/basicsetup) page.
+=======
+rpm-repos
+=========
+
+Custom RPMs used on our sites - enjoy
+>>>>>>> 15549cb7eddfd0873ea15b0f2e67f98c72168f35
